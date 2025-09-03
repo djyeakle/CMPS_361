@@ -1,7 +1,8 @@
 <?php
-
+// tester grade variable
 $grade = 87;
 
+// if else to test what the variable is
 if ($grade >= 90) {
     echo "Your letter grade is an A because your grade is a " . $grade . "%.";
 } else if ($grade >= 80) {
