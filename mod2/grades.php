@@ -1,6 +1,6 @@
 <?php
 // tester grade variable
-$grade = 87;
+$grade = 67;
 
 // if else to test what the variable is
 if ($grade >= 90) {
