@@ -1,6 +1,6 @@
 <?php
 
-    $url = "https://fake-json-api.mock.beeceptor.com/users";
+    $url = "http://localhost:8008/api/login";
 
     $urlWithParams = $url;
 
