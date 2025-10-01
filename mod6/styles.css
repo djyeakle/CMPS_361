@@ -1,0 +1,107 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 20px;
+}
+
+table {
+    width: 97%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+th a {
+    text-decoration: none;
+    color: black;
+}
+
+th a:hover {
+    color: #007bff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+}
+
+.pagination strong {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+.search-container {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.searchInput {
+    font-family:'Courier New', Courier, monospace;
+    padding: 8px 16px;
+}
+
+button {
+    margin-left: 10px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+#dataGrid tbody td:nth-child(3) {
+    color: transparent;
+    position: relative;
+}
+
+#dataGrid tbody td:nth-child(3)::before {
+    content: "**********";
+    color: black;
+    position: relative;
+}
+
+#dataGrid tbody td:hover td:nth-child(3) {
+    color: black;
+}
+
+#dataGrid tbody tr:hover td:nth-child(3)::before {
+    content: "";
+}
