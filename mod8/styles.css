@@ -1,0 +1,15 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+button {
+    margin-left: 10px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
