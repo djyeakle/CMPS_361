@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #b1d6e6;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+}
+
+.buttonOptions {
+    margin-top: 50px;
+}
+
+button {
+    padding: 8px 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logout {
+    margin-top: 15px;
+}

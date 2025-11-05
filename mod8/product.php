@@ -27,11 +27,11 @@
 <html>
     <head>
         <title>Products</title>
-        <link rel="stylesheet" href="../mod6/styles.css">
+        <link rel="stylesheet" href="./product.css">
     </head>
     <body>
         <h1>Products</h1>
-        <table>
+        <center><table>
             <thead>
                 <tr>
                     <th>Name</th>
@@ -50,7 +50,7 @@
                     </tr>
                 <?php endforeach; ?>
             </tbody>
-        </table>
+        </table></center>
 
         <div class="pagination">
             <?php if ($page > 1): ?>
@@ -70,7 +70,11 @@
 
         <br>
         <form action="addproduct.php">
-            <button type="submit">Add a Product</button>
+            <button type="submit" class="add">Add a Product</button>
         </form>
+        <form action="../mod7/home.php">
+            <button type="submit" class="home">Home</button>
+        </form>
+        
     </body>
 </html>

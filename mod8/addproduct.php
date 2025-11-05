@@ -35,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
     <head>
         <title>Add Product</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../mod7/login.css">
+        <script src="../mod7/home.js"></script>
     </head>
     <body>
         <h1>Add a Product</h1>
@@ -54,8 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <button type="submit">Submit</button><br><br>
 
-            <a href="product.php">Back to Products</a>
-
         </form>
+        <button onclick=viewProducts() class="back">Back</button>
     </body>
 </html>

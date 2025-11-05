@@ -12,12 +12,17 @@ if (!isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Stats App Home</title>
+        <link rel="stylesheet" href="./home.css">
+        <script src="./home.js"></script>
     </head>
     <body>
         <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
         <p>You have successfully logged in.</p>
-        <a href="../mod8/product.php">View Products</a>
-        <a href="logout.php">Logout</a>
+        <div class=buttonOptions>
+            <button onclick=viewProducts()>View Products</button>
+            <br>
+            <button onclick=logout() class="logout">Logout</button>
+        </div>
     </body>
 </html>

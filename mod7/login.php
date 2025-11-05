@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Stats App Login</title>
+        <link rel="stylesheet" href="./login.css">
     </head>
     <body>
-        <h2>Login Authentication</h2>
+        <h2>Login</h2>
         <form action="authentication.php" method="post">
             <label for="username">Username: </label>
             <input type="text" name="username" required><br><br>
