@@ -1,6 +1,6 @@
 <?php
 include 'auth_check.php';
-include 'connection.php';
+$pdo = include 'connection.php';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);

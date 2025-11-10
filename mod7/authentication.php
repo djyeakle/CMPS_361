@@ -22,17 +22,25 @@
 
     //sql query
     $sql = "SELECT * FROM users WHERE username = $1";
-    $result = pg_query_params($conn, $sql, array($username));
+    $result = pg_query_params($conn, $sql, [$username]);
+
+    if ($result === false) {
+        die("Query failed: " . pg_last_error($conn));
+    }
 
     if (pg_num_rows($result) > 0) {
-        $user = pg_fetch_assoc($result);
+        $userData = pg_fetch_assoc($result);
 
-        if (hash_equals($user['password'], crypt($password, $user['password']))) {
-            $_SESSION['username'] = $username;
-            header("Location: home.php");
+        if(is_array($userData) && isset($userData['password'])) {
+            if (hash_equals($userData['password'], crypt($password, $userData['password']))) {
+                $_SESSION['username'] = $username;
+                header("Location: home.php");
+            } else {
+                echo "Invalid Password";
+            }    
         } else {
-            echo "Invalid Password";
-        }
+            echo "Error fetching user data.";
+        } 
     } else {
         echo "Invalid Username";
     }
