@@ -1,5 +1,16 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        die("Invalid request method.");
+    }
+
     session_start();
+
+    include '../mod11/functions/track_activity.php';
 
     //database configuration
     $host = 'localhost';
@@ -34,8 +45,10 @@
         if(is_array($userData) && isset($userData['password'])) {
             if (hash_equals($userData['password'], crypt($password, $userData['password']))) {
                 $_SESSION['username'] = $username;
+                logActivity($username, 'login', 'Logged in successfully');
                 header("Location: home.php");
             } else {
+                logActivity($username, 'login', 'Failed login');
                 echo "Invalid Password";
             }    
         } else {
