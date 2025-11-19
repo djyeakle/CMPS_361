@@ -1,0 +1,36 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color:burlywood;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#chatbot {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background: #cfe2f3;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.bot-message {
+    background: #d9ead3;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
