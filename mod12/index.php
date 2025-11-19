@@ -15,6 +15,8 @@
 
     updateSession($pdo, $currentSessionId, $currentUserId);
 
+    logPageView($pdo, $currentSessionId, $currentUserId);
+
 ?>
 
 <html>
