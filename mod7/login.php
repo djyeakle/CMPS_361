@@ -3,6 +3,7 @@
     <head>
         <title>Stats App Login</title>
         <link rel="stylesheet" href="./login.css">
+        <script src="./popup.js"></script>
     </head>
     <body>
         <h2>Login</h2>
@@ -13,7 +14,7 @@
             <label for="password">Password: </label>
             <input type="password" name="password" required><br><br>
 
-            <button type="submit">Login</button>
+            <button type="submit" onclick=popup()>Login</button>
         </form>
     </body>
 </html>

@@ -2,6 +2,7 @@
     <head>
         <title>Apt 612 ChatBot</title>
         <link rel="stylesheet" href="./styles/stylesheet.css">
+        <script src="./home.js"></script>
     </head>
     <body>
         <div class="chat-container">
